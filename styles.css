@@ -134,7 +134,8 @@ section {
 .aboutme {
   text-decoration: none;
   color: #fff;
-  background: #7B00DB;
+  background-image: linear-gradient(#7B00DB,#520091);
+  border: none;
   padding: 10px 40px;
   border-radius: 4px;
   font-weight: bold;
@@ -237,13 +238,13 @@ section {
 }
 
 .headtopic {
-  width: 240px;
+  width: 260px;
   padding: 5px 20px;
   text-align: center;
   background: #ffffff;
   color: #000000;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 18px;
   transition-duration: 800ms;
 }
 
@@ -298,7 +299,7 @@ section {
 .work4 {
   width: 250px;
   text-align: start;
-  background: #21004d;
+  background-image: linear-gradient(#0e0118,#35005e,#7B00DB);
   border-radius: 30px;
   transition-duration: 800ms;
 }
@@ -318,6 +319,7 @@ section {
   width: 250px;
   color: #ffffff;
   padding: 20px;
+  font-size: 15px;
 }
 
 .button_read {
@@ -329,6 +331,11 @@ section {
   padding: 5px 10px;
   border: none;
   border-radius: 20px;
+}
+
+.button_read button:hover{
+  color: #000000;
+  box-shadow: 0 5px 5px rgba(114, 114, 114, 0.4);
 }
 
 .modal1,
