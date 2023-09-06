@@ -190,6 +190,18 @@
                         <button onclick="work4()">Read More</button>
                     </div>
                 </div>
+                <div class="work5">
+                    <div class="img_work">
+                        <img src="/images/work5/work5_cover.png" alt="">
+                    </div>
+                    <div class="name_ex">
+                        <b>MiniProject_WebPHP</b>
+                        <br>
+                    </div>
+                    <div class="button_read">
+                        <button onclick="work5()">Read More</button>
+                    </div>
+                </div>
             </div>
 
             <div class="footer">
@@ -502,7 +514,7 @@
 
                     <div class="desc">
                         <a>Responsible for website design, create
-                            a website and full stack development.</a><br>
+                            a website and full stack development.This project used Django Framework.</a><br>
                         <a>Code Example :</a>
                         <a href="https://github.com/sarawut-bank/Portfolio/tree/KS"
                             target="_blank">https://github.com/sarawut-bank/Portfolio.git</a>
@@ -537,6 +549,90 @@
                         }
                         slides[slideIndex4 - 1].style.display = "block";
                         dots[slideIndex4 - 1].className += " active";
+                    }
+                </script>
+
+            </div>
+
+
+            <div id="modal5" class="modal5">
+                <div class="content_details">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="headtop">
+                        <a>MiniProject_WebPHP</a>
+                    </div>
+                    <div class="slideshow-container">
+
+                        <div class="mySlides5">
+                            <img src="/images/work5/1.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides5">
+                            <img src="/images/work5/2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides5">
+                            <img src="/images/work5/3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides5">
+                            <img src="/images/work5/4.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides5">
+                            <img src="/images/work5/5.png" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides5(-1)">❮</a>
+                        <a class="next" onclick="plusSlides5(1)">❯</a>
+
+                    </div>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide5(1)"></span>
+                        <span class="dot" onclick="currentSlide5(2)"></span>
+                        <span class="dot" onclick="currentSlide5(3)"></span>
+                        <span class="dot" onclick="currentSlide5(4)"></span>
+                        <span class="dot" onclick="currentSlide5(5)"></span>
+                    </div>
+
+                    <div class="desc">
+                        <a>Responsible for website design, create
+                            a website and full stack development.This project used PHP.</a><br>
+                        <a>Code Example :</a>
+                        <a href="https://github.com/sarawut-bank/Portfolio/tree/MiniProject_WebPHP"
+                            target="_blank">https://github.com/sarawut-bank/Portfolio.git</a>
+                    </div>
+                </div>
+
+                <script>
+                    let slideIndex5 = 1;
+
+                    showSlides5(slideIndex5);
+
+
+                    function plusSlides5(n) {
+                        showSlides5(slideIndex5 += n);
+                    }
+
+                    function currentSlide5(n) {
+                        showSlides5(slideIndex5 = n);
+                    }
+
+                    function showSlides5(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides5");
+                        let dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex5 = 1 }
+                        if (n < 1) { slideIndex5 = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex5 - 1].style.display = "block";
+                        dots[slideIndex5 - 1].className += " active";
                     }
                 </script>
 
